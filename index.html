@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png"
+        href="https://multimedia.scmp.com/week-asia/article/asia-polling/images/icons/win-clinton.svg" />
+    <title>Blog Post Application</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        * {
+            color: #444b4e;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        h1 {
+            font-size: 6rem;
+            color: white;
+            letter-spacing: 0.1rem;
+            text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+        }
+
+        .hero {
+            background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .hero__content {
+            margin: 40px;
+            position: relative;
+            align-self: center;
+            padding: 3rem 0;
+            background-color: #061922;
+            width: 60%;
+        }
+
+        .snow {
+            position: absolute;
+            min-width: 100vw;
+            min-height: 100vh;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .snow .svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #snow-top-layer {
+            will-change: transform;
+            -webkit-transform: translateY(-768px);
+            transform: translateY(-768px);
+            -webkit-animation: fall 22.5s infinite linear;
+            animation: fall 22.5s infinite linear;
+        }
+
+        #snow-bottom-layer {
+            will-change: transform;
+            -webkit-transform: translateY(-768px);
+            transform: translateY(-768px);
+            -webkit-animation: fall 45s infinite linear;
+            animation: fall 45s infinite linear;
+        }
+
+        label {
+            margin: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            direction: ltr;
+            align-content: space-around;
+        }
+
+        @-webkit-keyframes fall {
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fall {
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hero">
+        <div class="snow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
+                <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+                    <g id="snow-bottom-layer">
+                        <ellipse cx="6" cy="1009.5" rx="6" ry="5.5" />
+                        <ellipse cx="138" cy="1110.5" rx="6" ry="5.5" />
+                        <ellipse cx="398" cy="1055.5" rx="6" ry="5.5" />
+                        <ellipse cx="719" cy="1284.5" rx="6" ry="5.5" />
+                        <ellipse cx="760" cy="1155.5" rx="6" ry="5.5" />
+                        <ellipse cx="635" cy="1459.5" rx="6" ry="5.5" />
+                        <ellipse cx="478" cy="1335.5" rx="6" ry="5.5" />
+                        <ellipse cx="322" cy="1414.5" rx="6" ry="5.5" />
+                        <ellipse cx="247" cy="1234.5" rx="6" ry="5.5" />
+                        <ellipse cx="154" cy="1425.5" rx="6" ry="5.5" />
+                        <ellipse cx="731" cy="773.5" rx="6" ry="5.5" />
+                        <ellipse cx="599" cy="874.5" rx="6" ry="5.5" />
+                        <ellipse cx="339" cy="819.5" rx="6" ry="5.5" />
+                        <ellipse cx="239" cy="1004.5" rx="6" ry="5.5" />
+                        <ellipse cx="113" cy="863.5" rx="6" ry="5.5" />
+                        <ellipse cx="102" cy="1223.5" rx="6" ry="5.5" />
+                        <ellipse cx="395" cy="1155.5" rx="6" ry="5.5" />
+                        <ellipse cx="826" cy="943.5" rx="6" ry="5.5" />
+                        <ellipse cx="626" cy="1054.5" rx="6" ry="5.5" />
+                        <ellipse cx="887" cy="1366.5" rx="6" ry="5.5" />
+                        <ellipse cx="6" cy="241.5" rx="6" ry="5.5" />
+                        <ellipse cx="138" cy="342.5" rx="6" ry="5.5" />
+                        <ellipse cx="398" cy="287.5" rx="6" ry="5.5" />
+                        <ellipse cx="719" cy="516.5" rx="6" ry="5.5" />
+                        <ellipse cx="760" cy="387.5" rx="6" ry="5.5" />
+                        <ellipse cx="635" cy="691.5" rx="6" ry="5.5" />
+                        <ellipse cx="478" cy="567.5" rx="6" ry="5.5" />
+                        <ellipse cx="322" cy="646.5" rx="6" ry="5.5" />
+                        <ellipse cx="247" cy="466.5" rx="6" ry="5.5" />
+                        <ellipse cx="154" cy="657.5" rx="6" ry="5.5" />
+                        <ellipse cx="731" cy="5.5" rx="6" ry="5.5" />
+                        <ellipse cx="599" cy="106.5" rx="6" ry="5.5" />
+                        <ellipse cx="339" cy="51.5" rx="6" ry="5.5" />
+                        <ellipse cx="239" cy="236.5" rx="6" ry="5.5" />
+                        <ellipse cx="113" cy="95.5" rx="6" ry="5.5" />
+                        <ellipse cx="102" cy="455.5" rx="6" ry="5.5" />
+                        <ellipse cx="395" cy="387.5" rx="6" ry="5.5" />
+                        <ellipse cx="826" cy="175.5" rx="6" ry="5.5" />
+                        <ellipse cx="626" cy="286.5" rx="6" ry="5.5" />
+                        <ellipse cx="887" cy="598.5" rx="6" ry="5.5" />
+                    </g>
+                </g>
+                <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
+                    <g id="snow-top-layer">
+                        <circle cx="8" cy="776" r="8" />
+                        <circle cx="189" cy="925" r="8" />
+                        <circle cx="548" cy="844" r="8" />
+                        <circle cx="685" cy="1115" r="8" />
+                        <circle cx="858" cy="909" r="8" />
+                        <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)" />
+                        <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)" />
+                        <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)" />
+                        <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)" />
+                        <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)" />
+                        <circle cx="8" cy="8" r="8" />
+                        <circle cx="189" cy="157" r="8" />
+                        <circle cx="548" cy="76" r="8" />
+                        <circle cx="685" cy="347" r="8" />
+                        <circle cx="858" cy="141" r="8" />
+                        <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)" />
+                        <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)" />
+                        <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)" />
+                        <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)" />
+                        <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="hero__content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="blog">Title</label>
+                                <input type="text" class="form-control" id="blogUserInput" placeholder="Enter Title...">
+                                <label for="blog2">Description</label>
+                                <input type="text" class="form-control" id="blogUserInput2" placeholder="Enter Text...">
+                                <button type="submit" class="btn btn-primary">Post</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <ul class="list-group" id="display">
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="alert" role="alert" id="message">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(() => {
+                const display = $("#display");
+                const form = $("#form");
+                const blogUserInput = $("#blogUserInput");
+                const blogUserInput2 = $("#blogUserInput2");
+                const message = $("#message");
+                message.hide();
+
+                const displayMessage = (flag, msg) => {
+                    // successful
+                    if (flag) {
+                        message.removeClass('alert-danger');
+                        message.addClass('alert-success');
+                        message.html(msg);
+                        message.show();
+                    }
+                    else {
+                        message.removeClass('alert-success');
+                        message.addClass('alert-danger');
+                        message.html(msg);
+                        message.show();
+                    }
+                }
+
+                const getBlog = () => {
+                    fetch('/getBlog', { method: "get" }).then((response) => {
+                        return response.json();
+                    }).then((data) => {
+                        console.log(data);
+                        displayBlog(data);
+                    });
+                }
+
+                getBlog();
+
+                const resetBlogInput = () => {
+                    blogUserInput.val('');
+                    blogUserInput2.val('');
+                }
+
+                const editBlog = (blog, blogID, editID) => {
+                    let editBtn = $(`#${editID}`);
+                    editBtn.click(() => {
+                        fetch(`/${blog._id}`, {
+                            method: "put",
+                            headers: {
+                                "Content-Type": "application/json; charset=utf-8"
+                            },
+                            body: JSON.stringify({ blog: blogUserInput.val(), description: blogUserInput2.val() })
+                        }).then((response) => {
+                            console.log(response);
+                            return response.json();
+                        }).then((data) => {
+                            if (data.ok == 1) {
+                                let blogIndex = $(`#${blogID}`);
+                                blogIndex.html(data.value.blog);
+                                resetBlogInput();
+                            }
+                        });
+                    });
+                }
+
+                const deleteBlog = (blog, listItemID, deleteID) => {
+                    let deleteBtn = $(`#${deleteID}`);
+                    deleteBtn.click(() => {
+                        fetch(`/${blog._id}`, {
+                            method: "delete"
+                        }).then((response) => {
+                            return response.json();
+                        }).then((data) => {
+                            if (data.ok == 1) {
+                                $(`#${listItemID}`).remove();
+                            }
+                        });
+                    });
+                }
+
+
+                const buildIDS = (blog) => {
+                    return {
+                        editID: "edit_" + blog._id,
+                        deleteID: "delete_" + blog._id,
+                        listItemID: "listItem_" + blog._id,
+                        blogID: "blog_" + blog._id
+                    }
+                }
+
+                const buildTemplate = (blog, ids) => {
+                    return `<li class="list-group-item" id="${ids.listItemID}">
+                            <div class="row">
+                                <div" id="${ids.blogID}"><h4>${blog.title}</h4></div>
+                                <br>
+                                <div id="${ids.blogID}">${blog.description}</div>
+                                <div class="col-md-4"></div>
+                                <div class="row-md-4 text-right">
+                                    <button type="button" class="btn btn-secondary" id="${ids.editID}">Edit</button>
+                                    <button type="button" class="btn btn-danger" id="${ids.deleteID}">Delete</button>
+                                </div>
+                            </div>
+                       </li>`;
+                }
+
+                const displayBlog = (data) => {
+                    data.forEach((blog) => {
+                        let ids = buildIDS(blog);
+                        display.append(buildTemplate(blog, ids));
+                        editBlog(blog, ids.blogID, ids.editID);
+                        deleteBlog(blog, ids.listItemID, ids.deleteID);
+                    });
+                }
+
+                form.submit((e) => {
+                    e.preventDefault();
+                    fetch('/', {
+                        method: 'post',
+                        body: JSON.stringify({ title: blogUserInput.val(), description: blogUserInput2.val() }),
+                        headers: {
+                            "Content-Type": "application/json; charset=utf-8"
+                        }
+                    }).then((response) => {
+                        return response.json();
+                    }).then((data) => {
+                        if (!data.error) {
+                            if (data.result.ok == 1 && data.result.n == 1) {
+                                let ids = buildIDS(data.document);
+                                display.append(buildTemplate(data.document, ids));
+                                editBlog(data.document, ids.blogID, ids.editID);
+                                deleteBlog(data.document, ids.listItemID, ids.deleteID);
+                                displayMessage(true, data.msg);
+                            }
+                        }
+                        else
+                            displayMessage(false, data.error.message);
+
+                        resetBlogInput();
+
+                    });
+                });
+
+            });
+        </script>
+</body>
+
+</html>
